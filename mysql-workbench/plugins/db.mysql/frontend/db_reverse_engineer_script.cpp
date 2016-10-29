@@ -17,7 +17,7 @@
  * 02110-1301  USA
  */
 
-#include <iconv.h>
+#include <iconv/iconv.h>
 #include <boost/foreach.hpp>
 
 #include "db_reverse_engineer_script.h"
