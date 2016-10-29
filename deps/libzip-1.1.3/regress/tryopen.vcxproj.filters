@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="I:\mysql-workbench\deps\libzip-1.1.3\regress\tryopen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="I:\mysql-workbench\deps\libzip-1.1.3\src\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="I:\mysql-workbench\deps\libzip-1.1.3\regress\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B496CDD0-5181-3158-BE93-5C45C99A7469}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="I:\mysql-workbench\deps\pcre\build\CMakeFiles\f722c26603e9461e6d7fb941f85974c3\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8FDAB397-BE06-37E0-A64A-7559371B8382}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
