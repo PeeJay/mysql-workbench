@@ -130,23 +130,20 @@ echo * MySQL client library ...
 xcopy /i /s /y /d %EXT_LIB_DIR%\mysql\%2\libmysql.dll %TARGET_DIR%\.
 rem xcopy /i /s /y /d %EXT_LIB_DIR%\mysql\%2\libmysql.pdb %TARGET_DIR%\. 1> nul 2> nul
 
-echo * MySQL cdbc driver ...
-rem copy %EXT_LIB_DIR%\cppconn\mysql\%2\mysqlcppconn.dll %TARGET_DIR%\. 1> nul 2> nul
-
 echo * glib libraries ...
-xcopy /i /s /y /d %EXT_LIB_DIR%\glib\libglib-2.0-0.dll %TARGET_DIR%\. 1> nul 2> nul
-xcopy /i /s /y /d %EXT_LIB_DIR%\glib\libgmodule-2.0-0.dll %TARGET_DIR%\. 1> nul 2> nul
-xcopy /i /s /y /d %EXT_LIB_DIR%\glib\libgobject-2.0-0.dll %TARGET_DIR%\. 1> nul 2> nul
-xcopy /i /s /y /d %EXT_LIB_DIR%\glib\libgthread-2.0-0.dll %TARGET_DIR%\. 1> nul 2> nul
-xcopy /i /s /y /d %EXT_LIB_DIR%\glib\libintl-8.dll %TARGET_DIR%\. 1> nul 2> nul
+xcopy /i /s /y /d %EXT_LIB_DIR%\glib\glib-2.0.dll %TARGET_DIR%\. 1> nul 2> nul
+xcopy /i /s /y /d %EXT_LIB_DIR%\glib\gmodule-2.0.dll %TARGET_DIR%\. 1> nul 2> nul
+xcopy /i /s /y /d %EXT_LIB_DIR%\glib\gobject-2.0.dll %TARGET_DIR%\. 1> nul 2> nul
+xcopy /i /s /y /d %EXT_LIB_DIR%\glib\gthread-2.0.dll %TARGET_DIR%\. 1> nul 2> nul
+xcopy /i /s /y /d %EXT_LIB_DIR%\glib\libintl.dll %TARGET_DIR%\. 1> nul 2> nul
 
 echo * libxml2 libraries ...
 xcopy /i /s /y /d %EXT_LIB_DIR%\libxml\libxml2.dll %TARGET_DIR%\.
-xcopy /i /s /y /d %EXT_LIB_DIR%\libxml\libiconv.dll %TARGET_DIR%\.
+xcopy /i /s /y /d %EXT_LIB_DIR%\libxml\iconv.dll %TARGET_DIR%\.
 
 echo * zlib + libzip libraries ...
 xcopy /i /s /y /d %EXT_LIB_DIR%\zlib\%2\zlib.dll %TARGET_DIR%\.
-xcopy /i /s /y /d %EXT_LIB_DIR%\libzip\%2\libzip.dll %TARGET_DIR%\.
+xcopy /i /s /y /d %EXT_LIB_DIR%\zip\%2\zip.dll %TARGET_DIR%\.
 
 rem =========== Python ============================
 
@@ -191,7 +188,7 @@ echo * cairo library ...
 xcopy /i /s /y /d %EXT_LIB_DIR%\cairo\*.dll %TARGET_DIR%\. 1> nul 2> nul
 
 echo * png library ...
-xcopy /i /s /y /d %EXT_LIB_DIR%\libpng\libpng.dll %TARGET_DIR%\.
+xcopy /i /s /y /d %EXT_LIB_DIR%\libpng\libpng16.dll %TARGET_DIR%\.
 
 echo * ctemplate library ...
 copy %EXT_LIB_DIR%\ctemplate\%2\libctemplate.dll %TARGET_DIR%\.
@@ -200,13 +197,13 @@ echo * cppconn library ...
 copy %EXT_LIB_DIR%\mysqlcppconn\%2\mysqlcppconn.dll %TARGET_DIR%\.
 
 echo * pcre library ...
-copy %EXT_LIB_DIR%\pcre\%2\pcre.dll %TARGET_DIR%\.
+copy %EXT_LIB_DIR%\pcre\%2\pcre*.dll %TARGET_DIR%\.
 
 echo * sqlite library ...
 copy %EXT_LIB_DIR%\sqlite\%2\sqlite3.dll %TARGET_DIR%\.
 
 echo * gdal library + tools ...
-copy %EXT_LIB_DIR%\gdal\gdal.dll %TARGET_DIR%\.
+copy %EXT_LIB_DIR%\gdal\*.dll %TARGET_DIR%\.
 copy %EXT_LIB_DIR%\gdal\*.exe %TARGET_DIR%\.
 
 echo * Templates
